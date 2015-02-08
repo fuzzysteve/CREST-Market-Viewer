@@ -146,6 +146,16 @@ var currentGroup;
 
     }
 
+    function setLanguage() {
+        var cookieok=confirm("This needs a cookie");
+        if (cookieok){
+            if ($("#language").val()=="Default") {
+                $.cookie('market-language',null);
+            } else {
+                $.cookie('market-language',$("#language").val());
+            }
+        }
+    }
 
     function loadRegionData() {
         $.getJSON($("#regionSelector").val(),function(data,status,xhr) {
@@ -199,6 +209,9 @@ var currentGroup;
         };
         if (token) {
             headers.Authorization = "Bearer " + token;
+        }
+        if ($.cookie('market-language')) {
+            headers['Accept-Language'] = $.cookie('market-language');
         }
         $.ajaxSetup({
             accepts: "application/json, charset=utf-8",
@@ -285,6 +298,9 @@ var currentGroup;
         loginSetup(token);
         $("#regionSelector").change(function() {
             loadRegionData();
+        })
+        $("#language").change(function() {
+            setLanguage();
         })
     });
 
