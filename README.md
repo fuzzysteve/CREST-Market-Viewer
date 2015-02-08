@@ -6,3 +6,6 @@ You'll also need to update the clientid to your applications id, and update the 
 
 
 This depends on xdr.js (I got mine from https://raw.githubusercontent.com/jaubourg/ajaxHooks/master/src/xdr.js) and moment.js (http://momentjs.com/) to be in the same directory 
+
+
+I have a copy up and running at: https://www.fuzzwork.co.uk/market/viewer2/
