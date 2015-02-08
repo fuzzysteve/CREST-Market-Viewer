@@ -1,6 +1,12 @@
 /*!
+ * Sections of code from https://github.com/jimpurbrick/crestexplorerjs
+ *  Copyright 2012, CCP (http://www.ccpgames.com)
+ *  Dual licensed under the MIT or GPL Version 2 licenses.
+ *  http://www.opensource.org/licenses/mit-license.php
+ *  http://www.opensource.org/licenses/GPL-2.0
  *
- * http://www.opensource.org/licenses/mit-license.php
+ *  All other code is under the MIT license.
+ *
 */
 
 
