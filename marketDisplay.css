@@ -1,0 +1,76 @@
+body
+{
+    font: 1em "Trebuchet MS",sans-serif;
+    background: black url(https://community.eveonline.com/bitmaps/interface/community/bg.jpg) top right no-repeat;
+    background-attachment: fixed;
+    color: rgb(200,200,200);
+    height:100%;
+    width:100%;
+}
+html {
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    width:100%;
+    position:relative
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li {
+    display:block;
+}
+
+.groupLink
+{
+    padding:2px;
+    margin:2px;
+    background-color: rgba(83, 83, 83, 0.95);
+    border: 0 solid black;
+    border-bottom:1px;
+    border-top:1px;
+}
+
+
+.marketgroupmain
+{   
+    position:fixed;
+    width:98%;
+    height:97%;
+    margin: 5px;
+    padding:5px;
+    background-color: rgba(43, 43, 43, 0.95);
+    border-radius: 2px;
+}
+
+#login-window {
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: rgb(20,20,20);
+    padding:10px;
+    background-color: rgba(43, 43, 43, 0.95);
+}
+#login {
+    color: rgb(200,200,200);
+}
+.marketgroupdiv {
+    position:fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height:90%;
+    width:25%;
+    max-width:25%
+}
+
+.marketdisplaydiv {
+    position:fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height:90%;
+    left:26%;
+    width:70%;
+    max-width:70%;
+    padding-left:5px;
+}

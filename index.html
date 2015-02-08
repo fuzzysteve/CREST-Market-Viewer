@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Market Browser</title>
+</title>
+<meta charset="utf-8"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="xdr.js"></script>
+<script src="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.4/css/jquery.dataTables.min.css"></script>
+<link rel="stylesheet" href="marketDisplay.css"></script>
+<script type="text/javascript" src="/blueprint/js/jquery.number.min.js"></script>
+<script type="text/javascript" src="/market/viewer/moment.min.js"></script>
+
+<script src="marketExplorer.js"></script>
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="shortcut icon" href="/favicon.ico">
+
+        <!-- Responsive and mobile friendly stuff -->
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div id="login-window">
+<a href="#" id="login">Login to Start Browsing the Market</a>
+</div>
+<div class="marketgroupmain">
+<div id="regionSelect">
+<select id="regionSelector">
+<option value="ignore">Select a region</option>
+</select>
+</div>
+    <div class=" marketgroupdiv">
+    <ul id="marketGroups">
+    </ul>
+    </div>
+
+    <div id="MarketDisplay" class="marketdisplaydiv">
+        <div id="itemDescription">
+        </div>
+        <div id="orders">
+            <div id="sellOrders">
+            <h2>Sellers</h2>
+            <table id="sell" class="orders hover compact row-border">
+                <thead>
+                    <tr><th>Station</th><th>Volume</th><th>Price</th><th>Expiration</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+            <div id="buyOrders">
+            <h2>Buyers</h2>
+            <table id="buy" class="orders hover compact row-border">
+                <thead>
+                    <tr><th>Station</th><th>Volume</th><th>Min Volume</th><th>Price</th><th>Range</th><th>Expiration</th></tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+        </div>
+</div>
+</body>
+</html>
