@@ -104,7 +104,7 @@ var currentGroup;
                 $.getJSON(subgroup.types.href,function(data,status,xhr) {
                     $.map(data.items,function(item){
                         if (item.marketGroup.href== group.dataset.cresthref) {
-                            node.append("<li data-cresthref='"+item.type.href+"' class='itemLink'><img width=16 hieght=16 src='"+item.type.icon.href+"'  data-cresthref='"+item.type.href+"'>"+item.type.name+"</li>");
+                            node.append("<li data-cresthref='"+item.type.href+"' class='itemLink'><img width=16 height=16 src='"+item.type.icon.href+"'  data-cresthref='"+item.type.href+"'>"+item.type.name+"</li>");
                             itemcount++;
                         }
                     });
